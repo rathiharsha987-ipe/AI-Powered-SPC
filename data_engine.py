@@ -10,7 +10,7 @@ def generate_factory_data():
     df = pd.DataFrame(data, columns=['S1', 'S2', 'S3', 'S4', 'S5'])
     
     # --- THE SABOTAGE (Damage) ---
-    # Injecting anomalies to test our Smart-SPC system
+    # Injecting anomalies to test AI-Powered SPC system
     df.iloc[12] = [65, 62, 68, 64, 66] # Sudden Mean Shift (Spike)
     df.iloc[20] = [40, 60, 35, 65, 50] # High Variance (Instability)
     
